@@ -25,7 +25,7 @@ const Title = styled("p", {
 });
 
 const Subtitle = styled("p", {
-  fontSize: "1.5vh",
+  fontSize: "1.9vh",
   fontWeight: "bold",
   opacity: 0.85,
   marginBottom: 0,
