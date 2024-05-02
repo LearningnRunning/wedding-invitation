@@ -36,7 +36,11 @@ const Image = styled("img", {
   maxWidth: 1024,
 });
 
-export default function Location() {
+type ShareProps = {
+  data?: Data;
+};
+
+export default function Location({ data }: ShareProps) {
   useEffect(() => {
     const defaultLevel = 3;
     const kakaoMapLoad = (level: number) => {
