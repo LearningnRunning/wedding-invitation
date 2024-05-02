@@ -6,6 +6,7 @@ import { styled } from "@stitches/react";
 import JsonData from "@/data.json";
 import Script from "next/script";
 
+
 const Title = dynamic(() => import("@/components/Title"), { ssr: false });
 const Gretting = dynamic(() => import("@/components/Gretting"), { ssr: false });
 const Gallery = dynamic(() => import("@/components/Gallery"), { ssr: false });
@@ -44,32 +45,36 @@ export default function Home() {
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta property="og:type" content="website" />
-        <meta content="○○○❤○○○ 결혼식에 초대합니다" name="Title" />
+        <meta content="김성록❤최서연 결혼식에 초대합니다" name="Title" />
         <meta
-          content="○○○○년 ○○월 ○○일 ○요일 오전 ○○시 ○○분"
+          content="2024년 06월 15일 토요일 12시"
           name="Description"
         />
-        <meta content="○○○○년 ○○월 ○○일 ○요일 오전 ○○시 ○○분" name="Keyword" />
-        <meta property="og:title" content="○○○❤○○○ 결혼식에 초대합니다" />
+        <meta content="2024년 06월 15일 토요일 12시" name="Keyword" />
+        <meta property="og:title" content="김성록❤최서연 결혼식에 초대합니다" />
         <meta
           property="og:description"
-          content="○○○○년 ○○월 ○○일 ○요일 오전 ○○시 ○○분"
+          content="2024년 06월 15일 토요일 12시"
         />
         <meta
           property="og:url"
-          content="https://kyuhyuk.kr/wedding-invitation"
+          content="https://learningnrunning.github.io/"
         />
         <meta name="theme-color" content="#BCAAA4" />
-        <title>○○○❤○○○ 결혼식에 초대합니다</title>
+        <title>김성록❤최서연 결혼식에 초대합니다</title>
       </Head>
       <main className={`${notoSansKR.className}`}>
         <Script src="https://developers.kakao.com/sdk/js/kakao.min.js"></Script>
+
         <Title data={JsonData} />
         <Gretting data={JsonData} />
         <Gallery />
-        <Location />
+        
+        
         <CongratulatoryMoney data={JsonData} />
         <Share data={JsonData} />
+        <Location />
+
         <Footer>Copyright © 2021 KyuHyuk Lee</Footer>
       </main>
     </>

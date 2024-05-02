@@ -40,7 +40,7 @@ export default function Gretting({ data }: GrettingProps) {
   return (
     <Wrapper>
       <Divider style={{ marginTop: 0, marginBottom: 32 }} plain>
-        <Title>결혼합니다</Title>
+        <Title>결혼합니다.</Title>
       </Divider>
       <Content>
         {data?.gretting?.split("\n")?.map((value, index) => {
@@ -57,7 +57,7 @@ export default function Gretting({ data }: GrettingProps) {
         {data?.groom?.parents?.mother?.name}의 장남 {data?.groom?.name}
         <br />
         {data?.bride?.parents?.father?.name} ·{" "}
-        {data?.bride?.parents?.mother?.name}의 장녀 {data?.bride?.name}
+        {data?.bride?.parents?.mother?.name}의 차녀 {data?.bride?.name}
       </GroomBride>
     </Wrapper>
   );

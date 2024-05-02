@@ -1,37 +1,37 @@
 {
-  "date": "1970년 01월 01일, 목요일 오전 12시 00분",
-  "location": "○○○웨딩, ○층 ○○홀",
+  "date": "2024년 06월 15일, 토요일 12시",
+  "location": "KINA 키나, 서울 성북구 선잠로 46 1층",
   "gretting": "서로 마주 보며 다져온 사랑을\n이제 함께 한곳을 바라보며 걸어갈 수 있는\n큰 사랑으로 키우고자 합니다.\n저희 두 사람이 사랑의 이름으로 지켜나갈 수 있게\n앞날을 축복해 주시면 감사하겠습니다.",
   "groom": {
-    "name": "○○○",
-    "account_number": "○○은행 ***-***-******",
+    "name": "김성록",
+    "account_number": "카카오뱅크 3333-07-1196151",
     "parents": {
       "mother": {
-        "name": "○○○",
-        "account_number": "○○은행 ***-***-******"
+        "name": "이순향",
+        "account_number": "카카오뱅크 3333-07-1196151"
       },
       "father": {
-        "name": "○○○",
-        "account_number": "○○은행 ***-***-******"
+        "name": "김봉욱",
+        "account_number": "카카오뱅크 3333-07-1196151"
       }
     }
   },
   "bride": {
-    "name": "○○○",
-    "account_number": "○○은행 ***-***-******",
+    "name": "최서연",
+    "account_number": "카카오뱅크 3333-07-1196151",
     "parents": {
       "mother": {
-        "name": "○○○",
-        "account_number": "○○은행 ***-***-******"
+        "name": "이표남",
+        "account_number": "카카오뱅크 3333-07-1196151"
       },
       "father": {
-        "name": "○○○",
-        "account_number": "○○은행 ***-***-******"
+        "name": "故 최진",
+        "account_number": ""
       }
     }
   },
   "kakaotalk": {
-    "api_token": "",
+    "api_token": "26d1e102e0293e4d740c19a09639abb8",
     "wedding_invitation_url": "",
     "share_image": ""
   }

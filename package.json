@@ -3,7 +3,10 @@
   "version": "1.0.1",
   "description": "KyuHyuk Lee🤵 ❤ Jungwon Byeon👰 Wedding Invitation💌",
   "main": "index.js",
-  "repository": "https://github.com/LeeKyuHyuk/wedding-invitation.git",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LeeKyuHyuk/wedding-invitation.git"
+  },
   "author": "KyuHyuk Lee <lee@kyuhyuk.kr>",
   "license": "MIT",
   "private": true,
@@ -31,6 +34,11 @@
     "@types/react-dom": "^18",
     "eslint": "^8",
     "eslint-config-next": "14.1.0",
-    "typescript": "^5"
-  }
+    "typescript": "^5.4.5"
+  },
+  "bugs": {
+    "url": "https://github.com/LeeKyuHyuk/wedding-invitation/issues"
+  },
+  "homepage": "https://github.com/LeeKyuHyuk/wedding-invitation#readme",
+  "keywords": []
 }

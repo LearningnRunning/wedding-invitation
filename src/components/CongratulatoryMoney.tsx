@@ -22,7 +22,7 @@ const Title = styled("p", {
 const Content = styled("p", {
   fontSize: "1.5vh",
   lineHeight: 1.75,
-  opacity: 0.75,
+  opacity: 1.7,
   marginBottom: 24,
 });
 
@@ -63,20 +63,22 @@ export default function CongratulatoryMoney({
       <Divider plain style={{ marginTop: 0, marginBottom: 32 }}>
         <Title>축하의 마음을 전하세요</Title>
       </Divider>
-      <Content>축하의 마음을 담아 축의금을 전달해 보세요.</Content>
+      <Content>마음 전하실 곳</Content>
       <ContactButton onClick={() => setGroomVisible(true)}>
-        <CheckCircleTwoTone
-          style={{ fontSize: 64, marginBottom: 16 }}
-          twoToneColor="#829fe0"
-        />
+        <img
+              src="./assets/check_groom_text.png"
+              alt="Check Circle Red"
+              style={{ width: 75, height: 75, marginBottom: 7 }}
+            />
         <br />
         <SubContent>신랑측 계좌번호 확인</SubContent>
       </ContactButton>
       <ContactButton onClick={() => setBrideVisible(true)}>
-        <CheckCircleTwoTone
-          style={{ fontSize: 64, marginBottom: 16 }}
-          twoToneColor="#fe7daf"
-        />
+        <img
+            src="./assets/check_bride_text.png"
+            alt="Check Circle Red"
+            style={{ width: 75, height: 75, marginBottom: 7 }}
+          />
         <br />
         <SubContent>신부측 계좌번호 확인</SubContent>
       </ContactButton>
@@ -151,23 +153,6 @@ export default function CongratulatoryMoney({
         okButtonProps={{ style: { display: "none" } }}
         footer={null}
       >
-        {data?.bride?.parents?.father && (
-          <div>
-            <b>부) {data?.bride?.parents?.father?.name}</b>
-            <Divider type="vertical" />
-            <CopyToClipboard
-              text={data?.bride?.parents?.father?.account_number}
-            >
-              <Button
-                type="text"
-                style={{ padding: 0, margin: 0 }}
-                onClick={() => message.success("계좌번호가 복사되었습니다.")}
-              >
-                {data?.bride?.parents?.father?.account_number}
-              </Button>
-            </CopyToClipboard>
-          </div>
-        )}
         {data?.bride?.parents?.mother && (
           <div style={{ marginTop: 24, marginBottom: 24 }}>
             <b>모) {data?.bride?.parents?.mother?.name}</b>
