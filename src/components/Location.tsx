@@ -55,11 +55,11 @@ export default function Location({ data }: ShareProps) {
           var options = {
             center: new window.kakao.maps.LatLng(37.5964783385796, 126.997113401321),
             level: level,
-            
           };
 
           var map = new window.kakao.maps.Map(container, options);
-              //마커가 표시 될 위치
+
+          // 마커가 표시 될 위치
           let markerPosition = new window.kakao.maps.LatLng(
             37.5964783385796,
             126.997113401321
@@ -73,6 +73,11 @@ export default function Location({ data }: ShareProps) {
           // 마커를 지도 위에 표시
           marker.setMap(map);
 
+          // Add click event listener to the marker
+          window.kakao.maps.event.addListener(marker, 'click', function() {
+            // Redirect to the desired URL when the marker is clicked
+            window.location.href = 'https://map.naver.com/p/entry/place/1036788911?c=15.00,0,0,0,dh';
+          });
         });
       };
 
