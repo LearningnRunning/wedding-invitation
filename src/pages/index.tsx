@@ -65,7 +65,7 @@ export default function Home() {
         {/* <script src="https://developers.kakao.com/sdk/js/kakao.js"></script> */}
       </Head>
       <main className={`${notoSansKR.className}`}>
-        <Script src="https://developers.kakao.com/sdk/js/kakao.js"></Script>
+        <Script src="https://developers.kakao.com/sdk/js/kakao.min.js"></Script>
         
         <Title data={JsonData} />
         <Gretting data={JsonData} />
