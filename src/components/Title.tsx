@@ -65,7 +65,7 @@ export default function Title({ data }: TitleProps) {
       <TitleWrapper>
         <WeddingInvitation>WEDDING INVITATION</WeddingInvitation>
         <GroomBride>
-          {data?.groom?.name} &#38; {data?.bride?.name}
+          {data?.groom?.name}   ❤️   {data?.bride?.name}
         </GroomBride>
         <Schedule>
           {data?.date}
