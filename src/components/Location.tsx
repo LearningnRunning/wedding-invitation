@@ -18,7 +18,14 @@ const Wrapper = styled("div", {
 });
 
 const Title = styled("p", {
-  fontSize: "3vh",
+  fontSize: "2vh",
+  fontWeight: "bold",
+  opacity: 0.85,
+  marginBottom: 0,
+});
+
+const Subtitle = styled("p", {
+  fontSize: "1.5vh",
   fontWeight: "bold",
   opacity: 0.85,
   marginBottom: 0,
@@ -67,9 +74,8 @@ export default function Location() {
       {/* <Image src="./assets/location_naver_map.png" /> */}
 
       <div id="map" style={{ width: "100%", height: "400px" }}></div>
-      <br />
       <CopyToClipboard
-              text={"서울시 성북구 선잠로 46 1층 KINA 키나"}
+              text={"서울시 성북구 선잠로 46"}
             >
               <Button
                 type="text"
@@ -77,9 +83,21 @@ export default function Location() {
                 onClick={() => message.success("주소가 복사되었습니다.")}
               >
                 {"서울시 성북구 선잠로 46 KINA 키나"}
-              </Button>
-        </CopyToClipboard>
 
+              </Button>
+              
+        </CopyToClipboard>
+        <div style={{ width: "100%", height: "150px", padding: "10px", boxSizing: "border-box", textAlign: "left" }}>
+        <Subtitle>대중교통 이용시<br /></Subtitle>
+        <br />한성대입구역(4호선) 하차 <br />
+          6번 출구로 나와서 성북동 마을버스 02번 탑승 <br />
+          성북빌리지역에서 하차 하시면 오르막길로 2분거리에 위치 하고 있습니다.
+        </div>
+        <div style={{ width: "100%", height: "200px", padding: "10px", boxSizing: "border-box", textAlign: "left" }}>
+
+        <Subtitle>자차 이용시<br /></Subtitle>
+        <br />KINA로 오시면 발렛 이용 가능합니다. (무료)
+        </div>
     </Wrapper>
     
   );

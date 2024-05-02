@@ -19,7 +19,7 @@ const Wrapper = styled("div", {
 });
 
 const Title = styled("p", {
-  fontSize: "3vh",
+  fontSize: "2vh",
   fontWeight: "bold",
   opacity: 0.85,
   marginBottom: 0,
@@ -95,7 +95,12 @@ export default function Share({ data }: ShareProps) {
       }, 100);
     } else {
       try {
-        window.Kakao.init(data?.kakaotalk?.api_token);
+        // window.Kakao.init(data?.kakaotalk?.api_token);
+        useEffect(() => {
+          if (!window.Kakao.isInitialized()) {
+            window.Kakao.init(process.env.REACT_APP_KAKAO_API_KEY);
+          }
+        }, []);
       } catch {}
     }
   }, [shareCount]);
