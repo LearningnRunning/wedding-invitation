@@ -64,7 +64,7 @@ export default function Location() {
       <Divider plain style={{ marginTop: 0, marginBottom: 32 }}>
         <Title>오시는 길</Title>
       </Divider>
-      {/* <Image src="./assets/location_naver_map.png" /> */}
+      <Image src="./assets/location_naver_map.png" />
 
       <div id="map" style={{ width: "100%", height: "400px" }}></div>
       <br />
