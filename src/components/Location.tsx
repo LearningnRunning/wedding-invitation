@@ -35,7 +35,7 @@ export default function Location() {
     const kakaoMapLoad = (level: number) => {
       const kakaoMapScript = document.createElement('script');
       kakaoMapScript.async = false;
-      kakaoMapScript.src = `//dapi.kakao.com/v2/maps/sdk.js?appkey=aab91e653d4df76ef3f0c325e05389ff&autoload=false`;
+      kakaoMapScript.src = `//dapi.kakao.com/v2/maps/sdk.js?appkey=26d1e102e0293e4d740c19a09639abb8&autoload=false`;
       document.head.appendChild(kakaoMapScript);
 
       const onLoadKakaoAPI = () => {
