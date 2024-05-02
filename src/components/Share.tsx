@@ -19,7 +19,7 @@ const Wrapper = styled("div", {
 });
 
 const Title = styled("p", {
-  fontSize: "2vh",
+  fontSize: "3vh",
   fontWeight: "bold",
   opacity: 0.85,
   marginBottom: 0,
@@ -114,7 +114,7 @@ export default function Share({ data }: ShareProps) {
       >
         카카오톡으로 공유하기
       </KakaoTalkShareButton>
-      <CopyToClipboard text={data?.kakaotalk?.wedding_invitation_url ?? ""}>
+      {/* <CopyToClipboard text={data?.kakaotalk?.wedding_invitation_url ?? ""}>
         <LinkShareButton
           style={{ margin: 8 }}
           icon={<LinkOutlined />}
@@ -123,7 +123,7 @@ export default function Share({ data }: ShareProps) {
         >
           링크로 공유하기
         </LinkShareButton>
-      </CopyToClipboard>
+      </CopyToClipboard> */}
     </Wrapper>
   );
 }
