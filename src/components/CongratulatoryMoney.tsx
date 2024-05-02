@@ -61,9 +61,9 @@ export default function CongratulatoryMoney({
   return (
     <Wrapper>
       <Divider plain style={{ marginTop: 0, marginBottom: 32 }}>
-        <Title>축하의 마음을 전하세요</Title>
+        <Title>마음 전하실 곳</Title>
       </Divider>
-      <Content>마음 전하실 곳</Content>
+
       <ContactButton onClick={() => setGroomVisible(true)}>
         <img
               src="./assets/check_groom_text.png"

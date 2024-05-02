@@ -59,7 +59,20 @@ export default function Location({ data }: ShareProps) {
           };
 
           var map = new window.kakao.maps.Map(container, options);
-          console.log("onLoadKakaoAPI")
+              //마커가 표시 될 위치
+          let markerPosition = new window.kakao.maps.LatLng(
+            37.5964783385796,
+            126.997113401321
+          );
+
+          // 마커를 생성
+          let marker = new window.kakao.maps.Marker({
+            position: markerPosition,
+          });
+
+          // 마커를 지도 위에 표시
+          marker.setMap(map);
+
         });
       };
 

@@ -40,7 +40,7 @@ export default function Gretting({ data }: GrettingProps) {
   return (
     <Wrapper>
       <Divider style={{ marginTop: 0, marginBottom: 32 }} plain>
-        <Title>결혼합니다.</Title>
+        <Title>결혼합니다</Title>
       </Divider>
       <Content>
         {data?.gretting?.split("\n")?.map((value, index) => {
