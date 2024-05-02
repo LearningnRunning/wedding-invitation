@@ -62,7 +62,7 @@ export default function Home() {
         />
         <meta name="theme-color" content="#BCAAA4" />
         <title>김성록❤최서연 결혼식에 초대합니다</title>
-        {/* <script src="https://developers.kakao.com/sdk/js/kakao.js"></script> */}
+        <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
       </Head>
       <main className={`${notoSansKR.className}`}>
         <Script src="https://developers.kakao.com/sdk/js/kakao.min.js"></Script>

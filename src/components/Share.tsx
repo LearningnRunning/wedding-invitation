@@ -65,8 +65,15 @@ export default function Share({ data }: ShareProps) {
   const [shareCount, setShareCount] = useState<number>(0);
 
   useEffect(() => {
+    if (!window.Kakao.isInitialized()) {
+      window.Kakao.init('26d1e102e0293e4d740c19a09639abb8');
+    }
+  }, []);
+
+  useEffect(() => {
     if (shareCount !== 0) {
-      window.Kakao.Link.createDefaultButton({
+      if (window.Kakao && window.Kakao.Link) {
+        window.Kakao.Link.createDefaultButton({
         objectType: "feed",
         container: "#sendKakao",
         content: {
@@ -94,17 +101,9 @@ export default function Share({ data }: ShareProps) {
         message.success("카카오톡으로 청첩장을 공유합니다!");
       }, 100);
     } else {
-      try {
-        // window.Kakao.init(data?.kakaotalk?.api_token);
-        useEffect(() => {
-          if (!window.Kakao.isInitialized()) {
-            window.Kakao.init(process.env.REACT_APP_KAKAO_API_KEY);
-          }
-        }, []);
-      } catch {}
-    }
-  }, [shareCount]);
-
+      console.error('Kakao SDK is not loaded or initialized correctly.');
+    }}
+  }, [shareCount, data?.bride?.name, data?.groom?.name, data?.kakaotalk?.share_image, data?.kakaotalk?.wedding_invitation_url]);
   return (
     <Wrapper>
       <Divider plain style={{ marginTop: 0, marginBottom: 32 }}>
@@ -119,16 +118,6 @@ export default function Share({ data }: ShareProps) {
       >
         카카오톡으로 공유하기
       </KakaoTalkShareButton>
-      {/* <CopyToClipboard text={data?.kakaotalk?.wedding_invitation_url ?? ""}>
-        <LinkShareButton
-          style={{ margin: 8 }}
-          icon={<LinkOutlined />}
-          size="large"
-          onClick={() => message.success("청첩장 링크가 복사되었습니다.")}
-        >
-          링크로 공유하기
-        </LinkShareButton>
-      </CopyToClipboard> */}
     </Wrapper>
   );
 }
