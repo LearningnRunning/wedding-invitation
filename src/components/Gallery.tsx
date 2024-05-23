@@ -41,6 +41,14 @@ const images = [
     original: "./assets/Gallery_Photo_6.png",
     thumbnail: "./assets/Gallery_Photo_6.png",
   },
+  {
+    original: "./assets/Gallery_Photo_7.jpg",
+    thumbnail: "./assets/Gallery_Photo_7.jpg",
+  },
+  {
+    original: "./assets/Gallery_Photo_8.jpg",
+    thumbnail: "./assets/Gallery_Photo_8.jpg",
+  },
 ];
 
 export default function Gallery() {

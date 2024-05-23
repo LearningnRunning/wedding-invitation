@@ -95,7 +95,7 @@ export default function Location({ data }: ShareProps) {
       </Divider>
       {/* <Image src="./assets/location_naver_map.png" /> */}
 
-      <div id="map" style={{ width: "100%", height: "400px" }}></div>
+      <div id="map" style={{ width: "100%", height: "200px" }}></div>
       <CopyToClipboard
               text={"서울시 성북구 선잠로 46"}
             >
