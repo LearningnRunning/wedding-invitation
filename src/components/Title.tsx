@@ -33,6 +33,18 @@ const VideoBackground = styled("video", {
   minHeight: 480,
 });
 
+const BackgroundImage = styled("div", {
+  backgroundColor: "#aeb8b3 !important",
+  opacity: 0.9,
+  backgroundImage: "url(./assets/BackgroundVideo.gif)",
+  backgroundSize: "cover",
+  backgroundPosition: "center center",
+  backgroundRepeat: "no-repeat",
+  width: "100%",
+  height: "100%",
+  minHeight: 480,
+});
+
 const WeddingInvitation = styled("p", {
   fontSize: "1.5vh",
   opacity: 0.45,
@@ -59,18 +71,14 @@ type TitleProps = {
 export default function Title({ data }: TitleProps) {
   return (
     <Layout>
-      <VideoBackground autoPlay loop muted playsInline={true}>
-        <source src="./assets/BackgroundVideo.mp4" type="video/mp4" />
-      </VideoBackground>
+      <BackgroundImage />
       <TitleWrapper>
         <WeddingInvitation>WEDDING INVITATION</WeddingInvitation>
         <GroomBride>
-          {data?.groom?.name}   ❤️   {data?.bride?.name}
+          {data?.groom?.name} ❤️ {data?.bride?.name}
         </GroomBride>
         <Schedule>
-          {data?.date}
-          <br />
-          {data?.location}
+          {data?.date} <br /> {data?.location}
         </Schedule>
       </TitleWrapper>
     </Layout>
