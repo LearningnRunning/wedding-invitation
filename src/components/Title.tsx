@@ -36,7 +36,7 @@ const TitleWrapper = styled("div", {
 const BackgroundImage = styled("div", {
   backgroundColor: "#aeb8b3 !important",
   opacity: 0.9,
-  backgroundImage: "url(./assets/BackgroundVideo.gif)",
+  backgroundImage: "url(./assets/BackgroundVideo.jpg)",
   backgroundSize: "cover",
   backgroundPosition: "center center",
   backgroundRepeat: "no-repeat",
