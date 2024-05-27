@@ -1,3 +1,4 @@
+import { Analytics } from '@vercel/analytics/react';
 import Head from "next/head";
 import { useEffect, useState } from "react";
 import { Noto_Sans_KR } from "next/font/google";
@@ -66,7 +67,8 @@ export default function Home() {
       </Head>
       <main className={`${notoSansKR.className}`}>
         <Script src="https://developers.kakao.com/sdk/js/kakao.min.js"></Script>
-        
+        <Analytics />
+
         <Title data={JsonData} />
         <Gretting data={JsonData} />
         <Gallery />
