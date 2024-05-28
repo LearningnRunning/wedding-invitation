@@ -66,7 +66,7 @@ export default function CongratulatoryMoney({
 
       <ContactButton onClick={() => setGroomVisible(true)}>
         <img
-              src="./assets/check_groom_text.png"
+              src="https://lh3.googleusercontent.com/u/0/drive-viewer/AKGpihbsjXlyV6aJvxRsdYQ2W8z1C6_E31hjya5lW5AxAa0MJJSbfazJ3CFxQCZsSm_1p-QmFmuUyIPHSJ4U82aezY6XYMIzif9wdjI"
               alt="Check Circle Red"
               style={{ width: 75, height: 75, marginBottom: 7 }}
             />
@@ -75,7 +75,7 @@ export default function CongratulatoryMoney({
       </ContactButton>
       <ContactButton onClick={() => setBrideVisible(true)}>
         <img
-            src="./assets/check_bride_text.png"
+            src="https://lh3.googleusercontent.com/u/0/drive-viewer/AKGpihY4xcSTe1T_hR3OBI-i0PJzW1EMhOwyDbw7X7QAj60Gk1f3IY1QhtmnNPyNkqjDMYyYG7ofJtrtncaMLF68xDIgDeLGUH9GWxk"
             alt="Check Circle Red"
             style={{ width: 75, height: 75, marginBottom: 7 }}
           />
