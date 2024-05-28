@@ -36,7 +36,7 @@ const TitleWrapper = styled("div", {
 const BackgroundImage = styled("div", {
   backgroundColor: "#aeb8b3 !important",
   opacity: 0.9,
-  backgroundImage: "url(./assets/BackgroundVideo.jpg)",
+  backgroundImage: "url(https://lh3.googleusercontent.com/u/0/drive-viewer/AKGpihZMquFlBwVfN6WoQEFw-oFxJPtalxM2wH3jbJnZXsYZpRFtMxv0L-HZ0F33n1G5HjOL8iHJGveRD5I-uuoCPFYnfpkOPtYmtA)",
   backgroundSize: "cover",
   backgroundPosition: "center center",
   backgroundRepeat: "no-repeat",
