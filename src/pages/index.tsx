@@ -26,7 +26,7 @@ const notoSansKR = Noto_Sans_KR({
 
 const Footer = styled("footer", {
   background: "#D7CCC8",
-  backgroundImage: "url(./assets/GroovePaper.png)",
+  backgroundImage: "url(https://lh3.googleusercontent.com/u/0/drive-viewer/AKGpihaxiQ2BHmSSYQvbxyzZ_bOy-yMvrjoisS3Q4C9Vo0ABBFcMthkgo9EGi2Yh7GM7pxXiS4_Vy5nI5PRGQVEBRuUNNg0P_GwI48I)",
   opacity: 0.6,
   textAlign: "center",
   width: "100%",

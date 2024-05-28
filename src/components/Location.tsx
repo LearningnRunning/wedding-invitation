@@ -11,7 +11,7 @@ declare global {
 
 const Wrapper = styled("div", {
   background: "#efebe9",
-  backgroundImage: "url(./assets/GroovePaper.png)",
+  backgroundImage: "url(https://lh3.googleusercontent.com/u/0/drive-viewer/AKGpihaxiQ2BHmSSYQvbxyzZ_bOy-yMvrjoisS3Q4C9Vo0ABBFcMthkgo9EGi2Yh7GM7pxXiS4_Vy5nI5PRGQVEBRuUNNg0P_GwI48I)",
   width: "100%",
   paddingBottom: 42,
   textAlign: "center",
